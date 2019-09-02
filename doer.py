@@ -1,4 +1,8 @@
-import collections
+
+#Creating a matrix to store the dataset information (each nodes realtions with each other)
+#later counting it in a brute force way
+#it sure does use a lot of memory also by wasting it for storing unnecessary information
+#i mean there is no need to store the 0 which represents no relation between nodes
 
 file = open("out.convote", "r")
 i = 0
