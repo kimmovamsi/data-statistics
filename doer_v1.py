@@ -1,5 +1,9 @@
 import collections
 
+#similar technique but instead we use a dictionary to store node relations
+#we dont waste memory for storing no relations
+#its still slow though
+
 file = open("out.convote", "r")
 i = 0
 temp = ''
