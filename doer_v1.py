@@ -1,10 +1,13 @@
 import collections
+from datetime import datetime
 
 #similar technique but instead we use a dictionary to store node relations
 #we dont waste memory for storing no relations
 #its still slow though
 
-file = open("out.convote", "r")
+start = datetime.now()
+
+file = open("out.stackexchange-stackoverflow", "r")
 i = 0
 temp = ''
 pointer_list = []
@@ -52,8 +55,9 @@ for i in dic:
                 elif k not in dic and k not in dic[i] and j not in dic[k]:
                     td_count += 1
 
-
 print(ta_count, tb_count, tc_count, td_count)
+end = datetime.now() - start
+print("Time took -> ", end.total_seconds())
 
 #stack_overflow = 1286 79334 50 10185002
 #flickr_growth = 282201198 868926209 1561217553 16942301238
