@@ -2,8 +2,9 @@ import collections
 from datetime import datetime
 
 #similar technique but instead we use a dictionary to store node relations
-#we dont waste memory for storing no relations
+#we dont waste memory for storing node relations
 #its still slow though
+#dictionary traversal method
 
 start = datetime.now()
 
