@@ -1,6 +1,9 @@
 import collections
 from datetime import datetime
 
+#Edge traversal method
+
+
 start = datetime.now()
 
 file = open("out.stackexchange-stackoverflow", "r")
